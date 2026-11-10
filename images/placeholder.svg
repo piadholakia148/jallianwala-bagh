@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <rect width="1200" height="675" fill="#efe8dd"/>
+  <rect x="24" y="24" width="1152" height="627" fill="none" stroke="#c9bba6" stroke-width="4" stroke-dasharray="18 12"/>
+  <g fill="none" stroke="#a8977f" stroke-width="10" stroke-linejoin="round">
+    <rect x="510" y="250" width="180" height="130" rx="10"/>
+    <circle cx="600" cy="315" r="38"/>
+    <path d="M550 250 l20 -28 h60 l20 28"/>
+  </g>
+  <text x="600" y="450" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="40" fill="#7d6e5a">Add your photo here</text>
+  <text x="600" y="500" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#9a8b76">Upload it to the images folder, then change the file name in index.md</text>
+</svg>

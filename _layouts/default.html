@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.dek | default: site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="masthead">
+    <span class="section-label">Opinion</span>
+  </header>
+
+  <article class="article">
+    <header class="article-header">
+      <h1>{{ page.title }}</h1>
+      {% if page.dek %}<p class="dek">{{ page.dek }}</p>{% endif %}
+      <p class="byline">By <strong>{{ page.author | default: site.author }}</strong>
+        {% if page.date %}&middot; <time>{{ page.date | date: "%B %-d, %Y" }}</time>{% endif %}
+        {% if page.updated %}&middot; Updated <time>{{ page.updated | date: "%B %-d, %Y" }}</time>{% endif %}
+      </p>
+    </header>
+
+    <div class="article-body">
+      {{ content }}
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <p>Written for RFLA 300: Righting Wrongs, Rollins College.</p>
+  </footer>
+</body>
+</html>
